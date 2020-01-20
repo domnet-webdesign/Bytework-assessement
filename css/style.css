@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* navigation bar starts */
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('/images/bkg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav, 
+.services-container,
+#customers-testimonial,
+.manage-container {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    padding: 1rem 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav .nav-logo {
+    float: left;
+}
+
+nav .navbar {
+    float: right;
+}
+
+nav .navbar .nav-link {
+    list-style: none;
+}
+
+nav .navbar .nav-link .nav-items {
+    display: inline-block;
+    line-height: 5;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+nav .navbar .nav-link .nav-items a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.3rem;
+}
+
+nav .navbar .nav-link .nav-items a:hover {
+    /* background: #b6997d; */
+    border-bottom: 2px solid #55381e;
+    border-bottom-left-radius: 1.4rem;
+    border-bottom-right-radius: 1.4rem;
+    border-top-right-radius: 1.4rem;
+    border-top-left-radius: 1.4rem;
+    /* border: .1rem #fff solid;
+    /* transition: 0.6s ease-in-out; */
+}
+
+/* banner content */
+.navbar-banner {
+    text-align: center;
+    color: #fff;
+}
+
+.navbar-banner .banner-content h1 {
+    font-size: 4rem;
+    margin: 0 auto;
+    padding: 6rem 0 0 0;
+}
+
+.navbar-banner .banner-content h1 span {
+    color: #ff9e1f;
+}
+
+.navbar-banner .banner-content p {
+    font-size: 1.2rem;
+    padding: -4rem 0 1rem 0;
+}
+
+.navbar-banner .banner-content h4 {
+    font-size: 1.7rem;
+    padding: .9rem 0 1rem 0;
+}
+
+.navbar-banner .banner-content h4 span{
+    color: #274c2d;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+.banner-link {
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+.banner-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+    border: 2px #fff solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: #274c2d;
+}
+
+.banner-link a:hover {
+    background: #fff;
+    color: #274c2d;
+    transition: 0.7s ease-in;
+}
+/* navigation bar ends */
+
+/* services starts */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.search-box,
+.connect-box,
+.transfer-box {
+    width: 100px;
+    height: 100px;
+    background: #274c2d;
+    color: #fff;
+    line-height: 7.5;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    margin-bottom: 2rem;
+    /* box-shadow: 0 0 5px rgba(204, 190, 190, 0.1) ; */
+}
+
+.search h3,
+.connect h3,
+.transfer h3 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ff9e1f;
+}
+
+.search p,
+.connect p,
+.transfer p {
+    font-size: 1.1rem;
+    color: #333;
+}
+/* services ends */
+
+/* testimonials starts */
+#testimonials {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/images/market_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#testimonials h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 3rem;
+}
+.testimonial img{
+    max-width: 180px;
+    height: 180px;
+    margin: 3rem 0;
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-bottom: 13px;
+    border-radius: 50%;
+    position: relative;
+    left: 10%;
+}
+
+.testimonial-name {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.testimonial-name .strong {
+    color: #ff9e1f;
+}
+
+/* manage start */
+#manage h2 {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.manage-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    /* overflow: hidden; */
+}
+
+.business-featured {
+    margin-bottom: 1.6rem;
+    box-shadow: 2px 4px 6px 5px rgb(184, 174, 174);
+}
+
+.business-featured h3 {
+    padding: .6rem;
+}
+
+.business-featured p {
+    padding: .7rem;
+}
+
+.business-featured a {
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #274c2d;
+    font-weight: bolder;
+    
+}
+/* manage ends */
+/* contact us starts*/
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    margin: 5rem 0;
+
+}
+
+.text-content h5 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.text-content .fn10 {
+    font-size: 1.5rem;
+}
+
+.text-content i  {
+    padding: 0 1rem;
+}
+/* start ends */
+
+/* contact talk */
+#contact{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/images/market_7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 70vh;
+}
+
+.contact-talk p{
+    position: relative;
+    top: 150px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-talk p span{
+    color: #feb01d;
+}
+
+.contact-talk a button{
+    padding: 1.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    background: #feb01d;
+    font-weight: bold;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    border: none;
+    top: 155px;
+}
+/* contact ends */
+
+/* footer */
+.footer-section{
+    text-align: center;
+    background: rgb(20, 20, 20);
+    color: #d67505;
+    height: 80px;
+    line-height: 5;
+
+}
+
+.footer-section span{
+    color: #fff;
+}
