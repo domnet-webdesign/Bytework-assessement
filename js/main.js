@@ -13,7 +13,7 @@ $(document).ready(function(){
 				items:1
 			},
 			1000:{
-				items:2
+				items:2  
 			}
 		},
 		autoplay:true,
@@ -21,9 +21,16 @@ $(document).ready(function(){
     	autoplayHoverPause:true
 	})
 
-
-
-
-
 });
+
+
+//----------Menu Toggle -----------------//
+$(document).ready(function() {
+
+	$('.menu').click(function() {
+
+		$('.nav-link').toggleClass('active')
+	})
+	    
+})
 

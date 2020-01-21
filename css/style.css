@@ -10,7 +10,7 @@ body {
 
 /* navigation bar starts */
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('/images/bkg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('/dist/images/bkg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,9 +21,13 @@ nav,
 .services-container,
 #customers-testimonial,
 .manage-container {
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     padding: 1rem 0;
+}
+
+.nav-logo img {
+    width: 220px;
 }
 
 .clearfix {
@@ -44,7 +48,7 @@ nav .navbar .nav-link {
 
 nav .navbar .nav-link .nav-items {
     display: inline-block;
-    line-height: 5;
+    line-height: 4;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -53,6 +57,12 @@ nav .navbar .nav-link .nav-items a {
     text-decoration: none;
     color: #fff;
     padding: 1.3rem;
+    /* display: block; */
+}
+
+nav .navbar .nav-link .nav-items a.active {
+    background: #274c2d;
+    color: #fff;  
 }
 
 nav .navbar .nav-link .nav-items a:hover {
@@ -119,6 +129,10 @@ nav .navbar .nav-link .nav-items a:hover {
     color: #274c2d;
     transition: 0.7s ease-in;
 }
+/*  */
+
+
+/*  */
 /* navigation bar ends */
 
 /* services starts */
@@ -162,7 +176,7 @@ nav .navbar .nav-link .nav-items a:hover {
 
 /* testimonials starts */
 #testimonials {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/images/market_1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/dist/images/market_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -267,7 +281,7 @@ nav .navbar .nav-link .nav-items a:hover {
 
 /* contact talk */
 #contact{
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/images/market_7.jpg');
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/dist/images/market_7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -317,4 +331,176 @@ nav .navbar .nav-link .nav-items a:hover {
 
 .footer-section span{
     color: #fff;
+}
+
+
+/* MEDIA QUERIES STARTS */
+
+@media(max-width: 1355px) {
+
+    nav {
+        margin-left: 6rem;
+        margin-right: 6rem;
+        padding: 1rem 0;
+    }
+
+    .nav-logo img {
+        width: 200px;
+    }
+    
+}
+
+@media(max-width: 1200px) {
+
+    nav {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding: 1rem 0;
+    }
+
+    .nav-logo img {
+        width: 180px;
+    }
+    
+}
+
+@media(max-width: 1100px) {
+
+    nav {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .nav-logo img {
+        width: 180px;
+    }
+    
+}
+
+@media(max-width: 1000px) {
+
+    nav {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .nav-logo img {
+        width: 220px;
+    }
+     
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 70px;
+        margin-right: 25px;
+        text-align: center;
+        cursor: pointer
+    }
+
+    .nav-link {
+        display: none;
+    }
+ 
+    .nav-link {
+        position: fixed;
+        width: 100%;
+        height: 48vh;
+        background: rgba(0,0,0,0.9);
+        top: 80px;
+        left: 0%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav .navbar .nav-link .nav-items {
+        display: block;
+        line-height: 4;
+        font-size: 1rem;
+    }
+
+    .active {
+        display: block;
+    }
+    
+}
+
+@media(max-width: 768px) {
+
+    .navbar-banner .banner-content h1 {
+        font-size: 3rem;
+        margin: 0 auto;
+        padding: 5rem 0 0 0;
+    }
+    
+    .navbar-banner .banner-content h1 span {
+        color: #ff9e1f;
+    }
+    
+    .navbar-banner .banner-content p {
+        font-size: 1rem;
+        padding: 0 0 0rem 0;
+    }
+    
+    .navbar-banner .banner-content h4 {
+        font-size: 1.3rem;
+        padding: .3rem 0 1rem 0;
+    }
+    
+    .navbar-banner .banner-content h4 span{
+        color: #274c2d;
+        font-weight: bolder;
+        font-size: 2.2rem;
+    }
+    
+    .banner-link {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+
+}
+
+@media(min-width: 300px) and (max-width: 678px) {
+
+    .navbar-banner .banner-content h1 {
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 5rem 0 0 0;
+    }
+    
+    .navbar-banner .banner-content h1 span {
+        color: #ff9e1f;
+    }
+    
+    .navbar-banner .banner-content p {
+        font-size: .8rem;
+        padding: 0 0 0rem 0;
+    }
+    
+    .navbar-banner .banner-content h4 {
+        font-size: .9rem;
+        padding: 0rem 0 1rem 0;
+    }
+    
+    .navbar-banner .banner-content h4 span{
+        color: #274c2d;
+        font-weight: bolder;
+        font-size: 2.2rem;
+    }
+    
+    .banner-link {
+        margin-bottom: 1.5rem;
+        padding: 1.3rem;
+    }
+
+    .banner-link a {
+        margin-bottom: .8rem;
+        padding: .8rem;
+        display: block;
+    }
+    
 }
