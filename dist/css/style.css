@@ -135,11 +135,10 @@ nav .navbar .nav-link .nav-items a:hover {
 /* services starts */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     text-align: center;
-    margin: 1rem 4rem 0 4rem;
-    padding: 3rem;
+    padding: 5rem;
     
 }
 
