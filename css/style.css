@@ -10,7 +10,7 @@ body {
 
 /* navigation bar starts */
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('/dist/images/bkg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/dist/images/bkg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
