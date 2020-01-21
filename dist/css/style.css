@@ -17,10 +17,7 @@ header {
     background-attachment: fixed;
 }
 
-nav, 
-.services-container,
-#customers-testimonial,
-.manage-container {
+nav{
     margin-left: 10rem;
     margin-right: 10rem;
     padding: 1rem 0;
@@ -138,11 +135,18 @@ nav .navbar .nav-link .nav-items a:hover {
 /* services starts */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     text-align: center;
-    margin-top: 3rem;
+    margin: 1rem 4rem 0 4rem;
+    padding: 3rem;
+    
 }
+
+/* .search {
+    box-shadow: 0 0 5px rgba(204, 190, 190, 0.9);
+} */
+
 .search-box,
 .connect-box,
 .transfer-box {
@@ -153,9 +157,9 @@ nav .navbar .nav-link .nav-items a:hover {
     line-height: 7.5;
     border-radius: 50%;
     position: relative;
-    left: 35%;
-    margin-bottom: 2rem;
-    /* box-shadow: 0 0 5px rgba(204, 190, 190, 0.1) ; */
+    left: 38%;
+    margin: 2rem 0;
+    
 }
 
 .search h3,
@@ -182,6 +186,7 @@ nav .navbar .nav-link .nav-items a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
+    text-align: center;
 }
 
 #testimonials h3 {
@@ -200,7 +205,7 @@ nav .navbar .nav-link .nav-items a:hover {
     margin-bottom: 13px;
     border-radius: 50%;
     position: relative;
-    left: 10%;
+    left: 19rem;
 }
 
 .testimonial-name {
@@ -208,6 +213,8 @@ nav .navbar .nav-link .nav-items a:hover {
     width: 50%;
     text-align: center;
     font-size: 1.3rem;
+    position: relative;
+    left: 13rem;
 }
 
 .testimonial-name .strong {
@@ -227,6 +234,7 @@ nav .navbar .nav-link .nav-items a:hover {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     text-align: center;
+    margin: 1rem 5rem 0 5rem;
     margin-top: 2rem;
     /* overflow: hidden; */
 }
@@ -257,7 +265,7 @@ nav .navbar .nav-link .nav-items a:hover {
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     text-align: center;
     margin-top: 2rem;
@@ -286,12 +294,13 @@ nav .navbar .nav-link .nav-items a:hover {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    height: 70vh;
+    padding-bottom: 10rem;
+    /* height: 50vh; */
 }
 
 .contact-talk p{
     position: relative;
-    top: 150px;
+    top: 80px;
     color: white;
     font-size: 2.5em;
     font-weight: 600;
@@ -302,20 +311,21 @@ nav .navbar .nav-link .nav-items a:hover {
     color: #feb01d;
 }
 
-.contact-talk a button{
+.contact-talk a{
     padding: 1.4rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.2rem;
     background: #feb01d;
-    font-weight: bold;
+    font-weight: bolder;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     position: relative;
     border: none;
-    top: 155px;
+    top: 100px;
+    text-decoration: none;
 }
 /* contact ends */
 
@@ -502,9 +512,14 @@ nav .navbar .nav-link .nav-items a:hover {
         padding: .8rem;
         display: block;
     }
-    .services-container,
-    .manage-container {
-        margin-left: 6rem;
+    .testimonial img{
+        position: relative;
+        left: 13rem;
+    }
+    
+    .testimonial-name {
+        position: relative;
+        left: 10rem;
     }
     
 }
