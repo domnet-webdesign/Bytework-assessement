@@ -10,7 +10,7 @@ body {
 
 /* navigation bar starts */
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/dist/images/bkg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('../images/bkg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ nav .navbar .nav-link .nav-items a:hover {
 
 /* testimonials starts */
 #testimonials {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/dist/images/market_1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('../images/market_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ nav .navbar .nav-link .nav-items a:hover {
 
 /* contact talk */
 #contact{
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/dist/images/market_7.jpg');
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('../images/market_7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -501,6 +501,10 @@ nav .navbar .nav-link .nav-items a:hover {
         margin-bottom: .8rem;
         padding: .8rem;
         display: block;
+    }
+    .services-container,
+    .manage-container {
+        margin-left: 6rem;
     }
     
 }
